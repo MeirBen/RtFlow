@@ -14,7 +14,6 @@ namespace RtFlow.Core
             ITransform<TCurr, TOut> transform,
             int boundedCapacity = 1000)
         {
-            // ← SWITCH TO TransformManyBlock
             var block = new TransformManyBlock<TCurr, TOut>(
                 async input =>
                 {
